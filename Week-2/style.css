@@ -28,6 +28,12 @@ a:hover {
 }
 
 /* Fonts */
+#name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    align-items: center;
+}
+
 .inter-title {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -50,9 +56,4 @@ a:hover {
     font-size: 14px;
 }
 
-#name {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 36px;
-    align-items: center;
-}
   
