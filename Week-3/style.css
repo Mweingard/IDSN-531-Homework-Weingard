@@ -1,0 +1,118 @@
+body {
+    background-color: #131414;
+    color: #FFFFF0;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #131414;
+}
+
+a {
+    color: #FFFFF0;
+    padding-right: 1%;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+#nav {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+#projects {
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item {
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 100%;
+    background-color: #252525;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* Images */
+#headshot {
+    filter: contrast(0.87);
+    float: right;
+    padding-left: 2.5%;
+}
+
+#flower {
+    position: absolute;
+    padding-left: 10px;
+    animation: spin 5s linear infinite;
+}
+
+.project-cover {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fonts */
+#name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    align-items: center;
+}
+
+.inter-title {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-description {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.inter-footer {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+}
+
+  
