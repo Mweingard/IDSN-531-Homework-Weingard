@@ -15,12 +15,13 @@ const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 camera.position.z = 30;
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color("#131414");
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.03;
 
-const geo = new THREE.TorusKnotGeometry(10, 2, 64, 8, 34, 23);
+const geo = new THREE.TorusKnotGeometry(10, 2, 64, 8, 34, 235);
 
 const mat = new THREE.ShaderMaterial({
     vertexShader: `
