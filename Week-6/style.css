@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    color: #EEABAE;
     text-decoration: underline;
     text-underline-offset: 6px;
 }
@@ -101,11 +101,11 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-    color: rgba(248, 228, 218, 0.7);
+    color: rgba(255, 214, 222, 0.7);
 }
 
 input:focus, textarea:focus {
-    outline: 1px solid #FFFFF0;
+    outline: 1px solid #FFD6DE;
     background-color: #2a2a2a;
 }
 
