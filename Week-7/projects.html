@@ -12,10 +12,20 @@
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function(){
-                $("#name").fadeIn(1000);
-                $("#headshot").fadeIn(1000);
-            });
+        $(document).ready(function(){
+            $("#name").fadeIn(1000);
+            
+            $(".inter-description").hide();
+
+            $(".item").hover(
+            function() {
+                $(this).find(".inter-description").stop(true, true).slideDown(300);
+            },
+            function() {
+                $(this).find(".inter-description").stop(true, true).slideUp(300);
+            }
+);
+        });
         </script>
     </head>
     <body>
