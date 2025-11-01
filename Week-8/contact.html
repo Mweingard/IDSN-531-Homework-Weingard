@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <title>
+            Maia's Bio | Contact
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#name").fadeIn(1000);
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="nav">
+                <a class="inter-link"href="index.html">Home</a>
+                <a class="inter-link" href="projects.html">Projects</a>
+                <a class="inter-link" href="playground.html">Playground</a>
+                <a class="inter-link" href="contact.html">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <h1 id="name">Let's Connect
+                <span><img id="flower" src="images/Flower.png" alt="flower"></span>
+            </h1>
+            <p class="inter-description">Wanna be startin' something? Send me a message below!</p>
+            <div class="formbox">
+                <form id="contact-form" class="inter-description">
+                    <div class="form-group">
+                        <label for="username">Name <span style="color: #EEABAE;">*</span></label>
+                        <input type="text" id="username" name="name" required placeholder="Your name" />
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="email">Email <span style="color: #EEABAE;">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com"
+                          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                      </div>
+                  
+                      <div class="form-group">
+                        <label for="message">Message <span style="color: #EEABAE;">*</span></label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+                      </div>
+                  
+                      <button type="submit" class="inter-title">Send Message</button>
+                </form>
+              </div>
+        </main>
+
+        <footer>
+            <p class="inter-footer">© Maia Weingard 2025</p>
+        </footer>
+    </body>
+</html>
